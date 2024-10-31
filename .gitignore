@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.so
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# Environment variables and dependencies
+.env
+.venv/
+venv/
+env/
+*.env
+
+# Package files
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Test and log files
+*.log
+
+# System-specific files
+.DS_Store
+Thumbs.db
