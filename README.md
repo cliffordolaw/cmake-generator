@@ -30,7 +30,7 @@ This tool is designed to automate the creation of `CMakeLists.txt` files from bu
 1. **Prepare Your Build Log**: Obtain a build log from your existing build process. For example:
 
 ```bash
-make > build_log.txt  # For Linux systems
+make > examples/sample_build.log  # For Linux systems
 ```
 
 2. **Run the Tool**: Execute the main script, passing in your build log file:
@@ -43,7 +43,7 @@ make > build_log.txt  # For Linux systems
 
 ## Project Structure
 
-1. **Directory Structure**:
+- **Directory Structure**:
     ```
     cmake-automation-tool/
     ├── src/

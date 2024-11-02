@@ -1,4 +1,28 @@
 cmake_minimum_required(VERSION 3.10)
 project(MyProject)
 
-add_executable(MyExecutable main.cpp)  # Replace with your source files
+set(SOURCES
+    main.cpp
+    utils.cpp
+)
+
+add_executable(MyExecutable ${SOURCES})
+
+target_include_directories(MyExecutable PRIVATE
+    /usr/include
+    "/usr /include"
+)
+
+target_compile_options(MyExecutable PRIVATE
+    -Wall
+    -O2
+)
+
+target_link_directories(MyExecutable PRIVATE
+    /usr/lib
+)
+
+target_link_libraries(MyExecutable PRIVATE
+    mylib
+)
+
